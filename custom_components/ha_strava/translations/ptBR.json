@@ -1,0 +1,51 @@
+{
+  "config": {
+    "title": "Integração Strava Home Assistant",
+    "create_entry": {
+      "default": "A Integração do seu Strava Home Assistant foi realizada com sucesso"
+    },
+    "abort": {
+      "already_configured": "A Integração do seu Strava Home Assistant ja foi realizada. Você so póde ter uma instalação por vez",
+      "no_public_url": "Sua instância do Home Assistant aparentemente não tem uma URL Pública. A Integração do seu Strava Home Assistant requer uma URL Pública",
+      "webhook_fail": "Strava Home Assistant falhou ao se comunicar com o Webhook do Strava"
+    },
+    "step": {
+      "get_oauth_info": {
+        "title": "Por favor, entre com suas credências do Strava API",
+        "description": "Você pode procurar mais informações de como obter as credências do Strava API aqui: https://www.strava.com/settings/api",
+        "data": {
+          "client_id": "ID do Cliente",
+          "client_secret": "Senha do Cliente",
+          "conf_photos": "Importar Fotos do Strava?"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configuração do Strava Home Assistant",
+        "data": {
+          "nb_activities": "Numero de simultâneos de Ativadades no Strava",
+          "img_update_interval_seconds": "Rotação da Imagem (em segundos)",
+          "conf_photos": "Importar Fotos do Strava?"
+        }
+      },
+      "sensor_options": {
+        "title": "Customizar as Leituras dos Sensores para um Tipo de Atividade particular",
+        "data": {
+          "activity_type": "Tipo de Atividade",
+          "sensor_1": "Sensor 1",
+          "sensor_2": "Sensor 2",
+          "sensor_3": "Sensor 3",
+          "sensor_4": "Sensor 4",
+          "sensor_5": "Sensor 5"
+        }
+      }
+    },
+    "abort": {
+      "no_config": "Não foi encontrado a configuração do Strava Home Assistant",
+      "update_success": "A configuração do Strava Home Assistant foi atualizada com sucesso!"
+    }
+  }
+}
